@@ -19,7 +19,8 @@ export default function Register(){
         },
         }).then(res => {
             if(res.status === 200){
-              console.log("Uspesna registracija");             
+              console.log("Uspesna registracija");            
+              // window.location.replace("loginpage") 
             }
         })
     }

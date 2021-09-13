@@ -1,0 +1,1 @@
+export const DELAY_TO_CANCEL_EXAm = 24;

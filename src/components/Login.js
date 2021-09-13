@@ -20,7 +20,8 @@ export default function Login(){
         },
         }).then(res => {
             if(res.status === 200){
-              console.log("Uspesna registracija");             
+              console.log("Uspesna registracija"); 
+              // window.location.replace("homepage")            
             }
         })
     }
