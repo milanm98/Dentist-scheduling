@@ -1,6 +1,8 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { VIEW_SCHEDULE } from "../../API";
+import Calendar from "react-calendar";
+
 
 export default function ViewSchedule(){
 
@@ -24,8 +26,8 @@ export default function ViewSchedule(){
 
     if(exams.length === 0){
         return(
-            <div className="flex w-full h-screen justify-center items-center text-center bg-green-100  text-black text-4xl flex flex-col">
-                Trenutno nema zakazanih termina
+            <div className="w-full h-screen flex justify-center items-center text-4xl">
+                <Calendar></Calendar>
             </div>
         )
     } else {
